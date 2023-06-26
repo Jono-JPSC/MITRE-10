@@ -14,8 +14,8 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom, white 55%, #F04F23);
-    animation: gradientTransition 1s;
+    background: linear-gradient(to bottom, white, #F04F23);
+    animation: gradientTransition 0.25s ease-in-out; /* Add the animation property */
     z-index: -1;
   }
 
@@ -29,7 +29,7 @@
   }
 
   .centered-container img {
-    margin-top: -11%; /* Raise the image by 10% */
+    margin-top: -11%; /* Raise the image by 11% */
   }
 
   .centered-container a {
@@ -37,8 +37,13 @@
     font-size: 30px;
     color: #000000;
     text-decoration: none;
-    margin-top: 30px /* Raise the hyperlink by 10% */
+    margin-top: 30px;
     font-style: italic; /* Italicize the text */
+  }
+  
+  @keyframes gradientTransition {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
   }
 </style>
 
