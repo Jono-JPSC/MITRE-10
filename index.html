@@ -8,14 +8,23 @@
     margin: 0;
   }
   
+  .background-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, white 55%, #F04F23);
+    z-index: -1;
+  }
+
   .centered-container {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh; /* Adjust as needed */
     flex-direction: column; /* Stack elements vertically */
-    background: linear-gradient(to bottom, white 55%, #F04F23);
-    margin-top: -10vh; /* Raise the container by 10% of viewport height */
   }
 
   .centered-container img {
@@ -32,11 +41,11 @@
   }
 </style>
 
+<div class="background-container"></div>
+
 <div class="centered-container">
   <img src="D%26T_Management%2BGroup2.png" alt="Image Description">
   <a href="SSSP%20-%20J-13170.pdf">Click Here For SSSP Info</a>
 </div>
-  </body>
-
   
 </html>
